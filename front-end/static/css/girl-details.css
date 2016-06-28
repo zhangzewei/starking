@@ -1,0 +1,19 @@
+.collection{
+	margin-top: 2em;
+}
+.pics img{
+	margin: 1em auto;
+}
+.girl-pics{
+	height: 400px;
+	overflow: hidden;
+}
+.vote{
+	margin: 1em 1em 1em;
+}
+.divide{
+	height: 1px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	margin: 2em auto;
+}
