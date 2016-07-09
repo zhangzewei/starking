@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>rank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/rank.css">
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <div class="container" id="rank"></div>
+
+    <div id="footer"></div>
+  </body>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/build/common.js"></script>
+  <script type="text/javascript" src="js/build/rank.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.op-logoin').click(function(){
+          $('.logoin').openModal();
+        });
+        $('.op-register').click(function(){
+          $('.register').openModal();
+        });
+      });
+  </script>
+</html>

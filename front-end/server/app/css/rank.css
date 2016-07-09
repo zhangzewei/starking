@@ -1,0 +1,8 @@
+.collection .collection-item.avatar {
+    min-height: 64px;
+    padding-left: 72px;
+    position: relative;
+}
+.collection .collection-item.avatar .title {
+  line-height: 40px;
+}

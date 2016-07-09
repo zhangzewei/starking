@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>show-girls</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/showgirls.css">
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <div  class="container">
+        <div class="title">
+        <h3>这么多美丽的女孩!!!</h3>
+        <div class="divider"></div>
+        <h3>为你心中喜爱的女孩投一票吧!</h3>
+        <h4>支持她，为她加油!</h4>
+        </div>
+    </div>
+
+    <div class="container" id="show-girls"></div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 s12">
+            <h5 class="white-text">公司地址</h5>
+            <p class="grey-text text-lighten-4">
+            四川城 成都市 高新区 天府五街中路 美年广场 C座 270-271号 StarKing Entertainment cor
+            </p>
+          </div>
+          <div class="col l4 s12">
+            <h5 class="white-text">联系方式</h5>
+            <p class="grey-text text-lighten-4">
+              TEL：15228900747 &nbsp;&nbsp;&nbsp;&nbsp; 18508200747<br>
+              Email：hwangjeakan@naver.com<br>
+              Wechat：hwangjeakan
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2016 成都斯塔星教育文化有限公司 StarKing Entertainment.
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/build/common.js"></script>
+  <script type="text/javascript" src="js/build/showgirls.js"></script>
+  <script type="text/javascript">
+		$(document).ready(function(){
+		    $('.op-logoin').click(function(){
+		    	$('.logoin').openModal();
+		    });
+		    $('.op-register').click(function(){
+		    	$('.register').openModal();
+		    });
+		  });
+	</script>
+</html>

@@ -5,10 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Starking</title>
-	<meta name="description" content="A photography-inspired website layout with an expanding stack slider and a background image tilt effect" />
-	<meta name="keywords" content="photography, template, layout, effect, expand, image stack, animation, flickity, tilt" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link href="css/materialize.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
@@ -256,28 +252,28 @@
 		</div>
 		<!-- /stacks -->
 		<div class="modal my-modal logoin">
-		    <div class="modal-content">
-		      <h4>登录</h4>
-		        <div class="row">
-		          <form class="col s12">
-		            <div class="row">
-		              <div class="input-field col s12">
-		                <input type="text" class="validate">
-		                <label for="first_name">账号</label>
-		              </div>
-		            </div>
-		            <div class="row">
-		              <div class="input-field col s12">
-		                <input type="password" class="validate">
-		                <label for="password">密码</label>
-		              </div>
-		            </div>
-            	    <div class="modal-footer">
-            	      <button type="submit" class="right waves-effect waves-light btn">登录</button>
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">取消</a>
-            	    </div>
-		          </form>
-		        </div>
+	    <div class="modal-content">
+	      	<h4>登录</h4>
+	        <div class="row">
+	          <form class="col s12">
+	            <div class="row">
+	              <div class="input-field col s12">
+	                <input type="text" class="validate">
+	                <label for="first_name">账号</label>
+	              </div>
+	            </div>
+	            <div class="row">
+	              <div class="input-field col s12">
+	                <input type="password" class="validate">
+	                <label for="password">密码</label>
+	              </div>
+	            </div>
+          	    <div class="modal-footer">
+          	      <button type="submit" class="right waves-effect waves-light btn">登录</button>
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">取消</a>
+          	    </div>
+	          </form>
+	        </div>
 			</div>
 		 </div>
 		 <div class="modal my-modal register">
@@ -403,7 +399,6 @@
 	<script src="js/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-		    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
 		    $('.op-logoin').click(function(){
 		    	$('.logoin').openModal();
 		    });

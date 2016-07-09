@@ -13,6 +13,6 @@
 
 安卓端：
 ## 每次上传请更新这个readme文件
-
-
-
+## 前端
+2016.7.9 张泽玮前端集合React页面，show-girls.html girl-detail.html rank.html,js文件已经打包到相应文件路径下app/js/build/
+2016.7.9数据类型我已经写上去了，然后麻烦黄金宏整合一下，app这个目录下的js文件中可以看见我写的json对象组
