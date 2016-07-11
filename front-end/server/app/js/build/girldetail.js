@@ -38,9 +38,12 @@ webpackJsonp([0],{
 	    name: 'haha',
 	    height: '170',
 	    weight: '65',
+	    birth: '1995.02.08',
+	    age: '21',
+	    edu: '大学',
 	    hobby: '唱歌，跳舞，等等',
-	    spe: 'Rap',
-	    department: 'Rap'
+	    exp: 'xxx活动经验等等',
+	    intro: '我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，'
 	  },
 	  pics: [{ src: 'img/1.jpg' }, { src: 'img/2.jpg' }, { src: 'img/3.jpg' }, { src: 'img/4.jpg' }, { src: 'img/3.jpg' }, { src: 'img/2.jpg' }],
 	  videos: [{
@@ -322,20 +325,42 @@ webpackJsonp([0],{
 	                _react3.default.createElement(
 	                  "li",
 	                  { className: "collection-item" },
+	                  "出生日期:",
+	                  this.props.data.birth
+	                ),
+	                _react3.default.createElement(
+	                  "li",
+	                  { className: "collection-item" },
+	                  "年龄:",
+	                  this.props.data.age
+	                ),
+	                _react3.default.createElement(
+	                  "li",
+	                  { className: "collection-item" },
+	                  "学历:",
+	                  this.props.data.edu
+	                ),
+	                _react3.default.createElement(
+	                  "li",
+	                  { className: "collection-item" },
 	                  "兴趣爱好:",
 	                  this.props.data.hobby
 	                ),
 	                _react3.default.createElement(
 	                  "li",
 	                  { className: "collection-item" },
-	                  "特长:",
-	                  this.props.data.spe
+	                  "活动经验:",
+	                  this.props.data.exp
 	                ),
 	                _react3.default.createElement(
 	                  "li",
 	                  { className: "collection-item" },
-	                  "部门:",
-	                  this.props.data.department
+	                  "自我介绍:",
+	                  _react3.default.createElement(
+	                    "p",
+	                    null,
+	                    this.props.data.intro
+	                  )
 	                ),
 	                _react3.default.createElement(
 	                  "a",
@@ -512,7 +537,7 @@ webpackJsonp([0],{
 	        return _react3.default.createElement(
 	          "div",
 	          { className: "col m3 s12 girl-pics", key: index },
-	          _react3.default.createElement("img", { className: "materialboxed", "data-caption": "this is one girl", width: "300", src: data.src })
+	          _react3.default.createElement("img", { className: "materialboxed", width: "300", src: data.src })
 	        );
 	      });
 	      return _react3.default.createElement(

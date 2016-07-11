@@ -5,7 +5,7 @@ class picItems extends Component {
     const picitems = this.props.data.map(function (data, index){
       return (
         <div className="col m3 s12 girl-pics" key={index}>
-          <img className="materialboxed" data-caption="this is one girl" width="300" src={data.src}/>
+          <img className="materialboxed" width="300" src={data.src}/>
         </div>
       )
     });

@@ -88,7 +88,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "93126e11b1eade760b31"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "fb1b4b239c337373af51"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -26031,7 +26031,7 @@
 	            ),
 	            _react3.default.createElement(
 	              "div",
-	              { className: "col l4 s12" },
+	              { className: "col l8 s12" },
 	              _react3.default.createElement(
 	                "h5",
 	                { className: "white-text" },
@@ -26040,7 +26040,7 @@
 	              _react3.default.createElement(
 	                "p",
 	                { className: "grey-text text-lighten-4" },
-	                "TEL：15228900747      18508200747",
+	                "TEL：13668158653（高主任）   18380458527（刘老师）   15608072971（杨老师）   15756289858（毛老师）   15908165270（尹老师）",
 	                _react3.default.createElement("br", null),
 	                "Email：hwangjeakan@naver.com",
 	                _react3.default.createElement("br", null),

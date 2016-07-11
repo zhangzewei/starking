@@ -15,9 +15,12 @@ const data ={
     name: 'haha',
     height: '170',
     weight: '65',
+    birth: '1995.02.08',
+    age: '21',
+    edu: '大学',
     hobby: '唱歌，跳舞，等等',
-    spe: 'Rap',
-    department: 'Rap'
+    exp: 'xxx活动经验等等',
+    intro: '我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，我是xxx像成为美少女明星，'
   },
   pics:[
     { src: 'img/1.jpg' },
