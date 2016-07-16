@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#eee"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width=""
+            android:layout_height="" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_back_24_24"
+
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/top_board"
+        android:layout_width="match_parent"
+        android:headerDividersEnabled="true"
+        android:dividerHeight="0.1px"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

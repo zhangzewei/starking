@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recycle_view_item_rect_bg">
+
+    <ImageView
+        android:id="@+id/recycle_view_item_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recycle_view_item_photo_height"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/recycle_view_item_title"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/recycle_view_item_text_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/app_name"
+        android:textColor="@color/colorText"
+        android:layout_height="wrap_content"
+        android:gravity="left"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/recycle_view_item_favo"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorText"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/default_item_favo_txt"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+
+
+
+        <ImageView
+            android:layout_width="@dimen/recycle_view_item_favo_size"
+            android:layout_height="@dimen/recycle_view_item_favo_size"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_favo"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_toLeftOf="@+id/recycle_view_item_favo"
+            />
+
+    </RelativeLayout>
+
+
+
+    
+</LinearLayout>

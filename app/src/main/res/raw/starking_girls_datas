@@ -1,0 +1,75 @@
+
+ [
+    {
+      "gid": "sg100001",
+      "gname": "Lucy",
+      "gurl": "http://c.hiphotos.baidu.com/image/h%3D300/sign=ade9bee181d6277ff612343818391f63/1b4c510fd9f9d72a4ab13a47d22a2834359bbb96.jpg",
+      "gfavo": "675"
+    },
+    {
+      "gid": "sg100002",
+      "gname": "Anna",
+      "gurl": "http://img5.imgtn.bdimg.com/it/u=3483626537,620482038&fm=23&gp=0.jpg",
+      "gfavo": "234"
+    },
+    {
+      "gid": "sg100003",
+      "gname": "Tina",
+      "gurl": "http://img1.imgtn.bdimg.com/it/u=1106596520,3704394261&fm=23&gp=0.jpg",
+      "gfavo": "567"
+    },
+    {
+      "gid": "sg100004",
+      "gname": "LiLi",
+      "gurl": "http://img4.imgtn.bdimg.com/it/u=2191056611,3865833519&fm=23&gp=0.jpg",
+      "gfavo": "987"
+    },
+    {
+      "gid": "sg100005",
+      "gname": "Ancy",
+      "gurl": "http://img2.imgtn.bdimg.com/it/u=3652586478,2097552654&fm=23&gp=0.jpg",
+      "gfavo": "759"
+    },
+    {
+      "gid": "sg100006",
+      "gname": "Shriy",
+      "gurl": "http://img5.imgtn.bdimg.com/it/u=1909099723,3879036524&fm=23&gp=0.jpg",
+      "gfavo": "345"
+    },
+    {
+      "gid": "sg100007",
+      "gname": "Bing",
+      "gurl": "http://img5.imgtn.bdimg.com/it/u=3856606464,3524866689&fm=23&gp=0.jpg",
+      "gfavo": "289"
+    },
+    {
+      "gid": "sg100008",
+      "gname": "Ace",
+      "gurl": "http://img4.imgtn.bdimg.com/it/u=1855194600,522477688&fm=23&gp=0.jpg",
+      "gfavo": "639"
+    },
+    {
+      "gid": "sg100009",
+      "gname": "Angle",
+      "gurl": "http://img2.imgtn.bdimg.com/it/u=1575115668,3536134518&fm=23&gp=0.jpg",
+      "gfavo": "738"
+    },
+    {
+      "gid": "sg1000010",
+      "gname": "Nacy",
+      "gurl": "http://img1.imgtn.bdimg.com/it/u=3765477811,1716723418&fm=23&gp=0.jpg",
+      "gfavo": "253"
+    },
+    {
+      "gid": "sg1000011",
+      "gname": "Mary",
+      "gurl": "http://img2.imgtn.bdimg.com/it/u=2531295103,430662217&fm=23&gp=0.jpg",
+      "gfavo": "367"
+    },
+    {
+      "gid": "sg1000012",
+      "gname": "WaWa",
+      "gurl": "http://img0.imgtn.bdimg.com/it/u=4092666809,2933355149&fm=23&gp=0.jpg",
+      "gfavo": "647"
+    }
+  ]

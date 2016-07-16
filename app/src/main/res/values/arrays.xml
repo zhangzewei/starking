@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="title_array">
+        <item>基本信息</item>
+        <item>更多资料</item>
+    </string-array>
+
+</resources>
