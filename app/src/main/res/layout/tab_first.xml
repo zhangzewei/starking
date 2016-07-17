@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="18dp"
                 android:textSize="14sp"
-                android:drawableLeft="@drawable/ic_support"
+                android:drawableLeft="@mipmap/ic_collect"
                 android:text="399 人收藏"
                 android:textColor="#727272"
                 />
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="18dp"
                 android:textSize="14sp"
-                android:drawableLeft="@drawable/ic_support"
+                android:drawableLeft="@mipmap/ic_support_15dp"
                 android:text="199 人支持她"
                 android:textColor="#727272"
                 />
@@ -145,16 +145,14 @@
             android:layout_margin="20dp"
             android:layout_height="wrap_content">
 
-            <TextView
-
+            <Button
                 android:layout_width="wrap_content"
                 android:padding="8dp"
                 android:layout_height="wrap_content"
                 android:text="加入收藏"
                 />
 
-            <TextView
-
+            <Button
                 android:padding="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -165,7 +163,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="40dp"
             android:padding="10dp"
             android:gravity="bottom|center_horizontal"
             android:textSize="10sp"

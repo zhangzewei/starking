@@ -48,7 +48,7 @@ public class LogUtils {
     }
 
     /**
-     * print error
+     * print ic_stubub.png
      * @param msg
      */
     public static void e(String msg)

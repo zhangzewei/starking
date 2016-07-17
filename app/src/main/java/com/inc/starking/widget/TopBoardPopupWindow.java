@@ -18,17 +18,17 @@ import java.util.List;
  * Created by Spec_Inc on 7/10/2016.
  */
 
-public class SearchPopupWindow extends PopupWindow {
+public class TopBoardPopupWindow extends PopupWindow {
 
 
     private View mView = null;
 
 
-    public SearchPopupWindow(Context context, List<GirlEntry> sortDatas) {
+    public TopBoardPopupWindow(Context context, List<GirlEntry> sortDatas) {
         super(context);
 
 
-        mView = LayoutInflater.from(context).inflate(R.layout.pop_search, null);
+        mView = LayoutInflater.from(context).inflate(R.layout.pop_top_board, null);
 
         ListView lv = (ListView) mView.findViewById(R.id.top_board);
 

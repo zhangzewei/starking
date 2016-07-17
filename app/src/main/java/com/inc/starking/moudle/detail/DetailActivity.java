@@ -18,7 +18,6 @@ import com.inc.starking.adapter.BanableSlidingViewPagerAdapter;
 import com.inc.starking.base.BaseActivity;
 import com.inc.starking.R;
 import com.inc.starking.entry.GirlEntry;
-import com.inc.starking.moudle.main.MainActivity;
 import com.inc.starking.utils.Constant;
 import com.inc.starking.widget.BanableSlidingViewPager;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;

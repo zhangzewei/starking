@@ -318,7 +318,7 @@ public class ImageLoader {
                         return;
                     }
                     if(bm == null){
-                        System.err.println("cause a error in image loader thread!");
+                        System.err.println("cause a ic_stubub.png in image loader thread!");
                         return;
                     }
 

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.inc.starking.R;
 import com.inc.starking.entry.GirlEntry;
+import com.inc.starking.utils.ImageLoaderUtils;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
@@ -34,17 +35,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     public RecycleViewAdapter(List<GirlEntry> datas, OnItemClickListener listener) {
         this.mDatas = datas;
         this.mListener = listener;
-
-        mOptions = new DisplayImageOptions.Builder()
-                .showImageOnLoading(R.drawable.ic_stub)
-                .showImageForEmptyUri(R.drawable.ic_empty)
-                .showImageOnFail(R.drawable.ic_error)
-                .cacheInMemory(true)
-                .cacheOnDisk(true)
-                .considerExifParams(true)
-                .bitmapConfig(Bitmap.Config.RGB_565)
-                .build();
-
+        mOptions = ImageLoaderUtils.getDisplayImageOptions();
     }
 
     @Override
@@ -56,8 +47,6 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
-
-        ImageLoader imageLoader = ImageLoader.getInstance(); // Get singleton instance
 
         String url = "http://img2.imgtn.bdimg.com/it/u=1293561118,2909352322&fm=21&gp=0.jpg";
 

@@ -9,17 +9,25 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:background="?attr/colorPrimary"
-        android:layout_height="100dp">
+        android:layout_height="120dp">
 
         <TextView
-            android:layout_width=""
-            android:layout_height="" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="30dp"
+            android:text="  20  "
+            android:textColor="@android:color/white"
+            android:drawableLeft="@mipmap/ic_top_board_72dp"
+            android:drawableRight="@mipmap/ic_top_64dp"
+            />
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="30dp"
-            android:src="@drawable/ic_back_24_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_close_32dp"/>
 
 
 
@@ -29,7 +37,7 @@
         android:id="@+id/top_board"
         android:layout_width="match_parent"
         android:headerDividersEnabled="true"
-        android:dividerHeight="0.1px"
+        android:dividerHeight="0.2px"
         android:layout_height="match_parent"/>
 
 

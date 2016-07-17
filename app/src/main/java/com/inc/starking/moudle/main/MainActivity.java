@@ -29,7 +29,7 @@ import com.inc.starking.entry.GirlEntry;
 import com.inc.starking.moudle.detail.DetailActivity;
 import com.inc.starking.utils.ArrayUtils;
 import com.inc.starking.utils.Constant;
-import com.inc.starking.widget.SearchPopupWindow;
+import com.inc.starking.widget.TopBoardPopupWindow;
 import com.inc.starking.widget.SwipeAndPullRefreshLayout;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -40,7 +40,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -222,7 +221,7 @@ public class MainActivity extends BaseActivity
                 return false;
             }
 
-            SearchPopupWindow popup = new SearchPopupWindow(MainActivity.this,sortDatas);
+            TopBoardPopupWindow popup = new TopBoardPopupWindow(MainActivity.this,sortDatas);
             popup.showAtLocation(LayoutInflater.from(MainActivity.this)
                     .inflate(R.layout.activity_main,null), Gravity.CENTER,0,0);
 

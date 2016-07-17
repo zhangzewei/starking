@@ -2,6 +2,7 @@ package com.inc.starking.base;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,8 +26,6 @@ public class ViewHolder {
     private Context mContext;
 
     /**
-     * ViewHolder���췽��
-     * ��ʼ����SparseArray��������..
      *
      * @param context
      * @param layoutId
@@ -45,7 +44,6 @@ public class ViewHolder {
 
 
     /**
-     * ��ȡViewHolder����
      *
      * @param convertView
      * @param context
@@ -58,23 +56,17 @@ public class ViewHolder {
                                  int layoutId, ViewGroup parent, int position) {
 
 
-        if (convertView == null)
-        //�ж�convertView�����ûView�洢����ʵ����һ����
-        // ��Ȼ�ͻ�ȡView�����أ�֮������ô����������Ϊ��new��ʱ���п����õ�
-        {
+        if (convertView == null) {
             return new ViewHolder(context, layoutId, parent, position);
         } else {
             ViewHolder holder = (ViewHolder) convertView.getTag();
             holder.mPosition = position;
-            System.out.println("position_" + holder.mPosition);
             return holder;
 
         }
     }
 
     /**
-     * ��ȡItem�пؼ�����
-     * �������ʹ�������пؼ�
      *
      * @param viewId
      * @param <T>
@@ -92,7 +84,6 @@ public class ViewHolder {
     }
 
     /**
-     * ��ȡconvertView��������getView()�����ķ���ֵ
      *
      * @return
      */
@@ -102,8 +93,6 @@ public class ViewHolder {
 
 
     /**
-     * ����TextView���ı�����
-     * ֮���Է���ViewHolder������Ϊ�˿��Խ�����ʽ���
      *
      * @param viewId
      * @param str
@@ -115,8 +104,15 @@ public class ViewHolder {
         return this;
     }
 
+
+    public ViewHolder setTextImageResource(int viewId,int resId){
+        TextView mText = getView(viewId);
+        mText.setBackgroundResource(resId);
+        return this;
+    }
+
+
     /**
-     * ����ImageView��ͼƬ,ͨ����ԴId
      *
      * @param viewId
      * @param resId
@@ -141,7 +137,6 @@ public class ViewHolder {
 
 
     /**
-     * ����ImageViewͼƬ��ͨ��Bitmap����
      *
      * @param viewId
      * @param bitmap
@@ -156,8 +151,6 @@ public class ViewHolder {
 
 
     /**
-     * ����ImageViewͼƬ��ͨ��Url�������м���ͼƬתΪBitmap����
-     * ����ļ��ط�ʽ�����Լ���д��Ҳ����ʹ�õ�������ܣ���Volley
      *
      * @param viewId
      * @param url
