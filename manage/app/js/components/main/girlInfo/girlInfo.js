@@ -7,7 +7,7 @@ const ShowPics = React.createClass({
       return (
         <div className="span3" key={index}>
           <div className="item">
-            <a className="fancybox-button" data-rel="fancybox-button" title="Photo" href="app/image/image1.jpg">
+            <a className="fancybox-button" data-rel="fancybox-button" title="Photo" href={img.url} >
               <div className="zoom">
                 <img src={img.url} alt="Photo" />
                 <div className="zoom-icon"></div>
