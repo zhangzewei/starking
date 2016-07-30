@@ -88,7 +88,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "fb1b4b239c337373af51"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a80b7de4deef3ea19006"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -25641,7 +25641,7 @@
 	            { id: "nav-mobile", className: "right" },
 	            _react3.default.createElement(
 	              "button",
-	              { className: "waves-effect waves-light btn op-logoin" },
+	              { className: "waves-effect waves-light btn op-login" },
 	              "登录"
 	            ),
 	            _react3.default.createElement(
@@ -25665,10 +25665,10 @@
 /* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-			value: true
+	  value: true
 	});
 	
 	var _react2 = __webpack_require__(1);
@@ -25690,103 +25690,132 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _components = {
-			login: {
-					displayName: "login"
-			}
+	  login: {
+	    displayName: 'login'
+	  }
 	};
 	
 	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-			filename: "/home/zhangzewei/projects/starking/front-end/server/app/js/components/header/login.js",
-			components: _components,
-			locals: [module],
-			imports: [_react3.default]
+	  filename: '/home/zhangzewei/projects/starking/front-end/server/app/js/components/header/login.js',
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
 	});
 	
 	function _wrapComponent(id) {
-			return function (Component) {
-					return _reactTransformHmr2(Component, id);
-			};
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
 	}
 	
-	var login = _wrapComponent("login")(function (_Component) {
-			_inherits(login, _Component);
+	var login = _wrapComponent('login')(function (_Component) {
+	  _inherits(login, _Component);
 	
-			function login() {
-					_classCallCheck(this, login);
+	  function login() {
+	    _classCallCheck(this, login);
 	
-					return _possibleConstructorReturn(this, Object.getPrototypeOf(login).apply(this, arguments));
-			}
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(login).apply(this, arguments));
+	  }
 	
-			_createClass(login, [{
-					key: "render",
-					value: function render() {
-							return _react3.default.createElement(
-									"div",
-									{ className: "modal my-modal logoin" },
-									_react3.default.createElement(
-											"div",
-											{ className: "modal-content" },
-											_react3.default.createElement(
-													"h4",
-													null,
-													"登录"
-											),
-											_react3.default.createElement(
-													"div",
-													{ className: "row" },
-													_react3.default.createElement(
-															"form",
-															{ className: "col s12" },
-															_react3.default.createElement(
-																	"div",
-																	{ className: "row" },
-																	_react3.default.createElement(
-																			"div",
-																			{ className: "input-field col s12" },
-																			_react3.default.createElement("input", { type: "text", className: "validate" }),
-																			_react3.default.createElement(
-																					"label",
-																					{ htmlFor: "first_name" },
-																					"账号"
-																			)
-																	)
-															),
-															_react3.default.createElement(
-																	"div",
-																	{ className: "row" },
-																	_react3.default.createElement(
-																			"div",
-																			{ className: "input-field col s12" },
-																			_react3.default.createElement("input", { type: "password", className: "validate" }),
-																			_react3.default.createElement(
-																					"label",
-																					{ htmlFor: "password" },
-																					"密码"
-																			)
-																	)
-															),
-															_react3.default.createElement(
-																	"div",
-																	{ className: "modal-footer" },
-																	_react3.default.createElement(
-																			"button",
-																			{ type: "submit", className: "right waves-effect waves-light btn" },
-																			"登录"
-																	),
-																	_react3.default.createElement(
-																			"a",
-																			{ href: "#!", className: " modal-action modal-close waves-effect waves-green btn-flat" },
-																			"取消"
-																	)
-															)
-													)
-											)
-									)
-							);
-					}
-			}]);
+	  _createClass(login, [{
+	    key: 'checkLogin',
+	    value: function checkLogin(event) {
+	      var username = $('input[name="loginAccount"]').val();
+	      var password = $('input[name="loginAccount"]').val();
+	      if (username != '' && password != '') {
+	        event.preventDefault();
+	        var data = {
+	          username: username,
+	          password: password
+	        };
+	        $.ajax({
+	          url: 'test.json',
+	          data: data,
+	          dataType: 'json',
+	          type: 'POST'
+	        }).then(function (result) {
+	          console.log(result);
+	        }).catch(function () {
+	          console.log('服务器出错了');
+	        });
+	      } else {
+	        return false;
+	      }
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
 	
-			return login;
+	      return _react3.default.createElement(
+	        'div',
+	        { className: 'modal my-modal login' },
+	        _react3.default.createElement(
+	          'div',
+	          { className: 'modal-content' },
+	          _react3.default.createElement(
+	            'h4',
+	            null,
+	            '登录'
+	          ),
+	          _react3.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react3.default.createElement(
+	              'form',
+	              { className: 'col s12' },
+	              _react3.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react3.default.createElement(
+	                  'div',
+	                  { className: 'input-field col s12' },
+	                  _react3.default.createElement('input', { type: 'text', name: 'loginAccount', className: 'validate', required: true }),
+	                  _react3.default.createElement(
+	                    'label',
+	                    { htmlFor: 'first_name' },
+	                    '账号'
+	                  )
+	                )
+	              ),
+	              _react3.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react3.default.createElement(
+	                  'div',
+	                  { className: 'input-field col s12', name: 'loginPassword' },
+	                  _react3.default.createElement('input', { type: 'password', className: 'validate', required: true }),
+	                  _react3.default.createElement(
+	                    'label',
+	                    { htmlFor: 'password' },
+	                    '密码'
+	                  )
+	                )
+	              ),
+	              _react3.default.createElement(
+	                'div',
+	                { className: 'modal-footer' },
+	                _react3.default.createElement(
+	                  'button',
+	                  { onClick: function onClick(event) {
+	                      return _this2.checkLogin(event);
+	                    }, className: 'right waves-effect waves-light btn' },
+	                  '登录'
+	                ),
+	                _react3.default.createElement(
+	                  'a',
+	                  { href: '#!', className: ' modal-action modal-close waves-effect waves-green btn-flat' },
+	                  '取消'
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return login;
 	}(_react2.Component));
 	
 	exports.default = login;
@@ -25796,7 +25825,7 @@
 /* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25822,12 +25851,12 @@
 	
 	var _components = {
 	  register: {
-	    displayName: "register"
+	    displayName: 'register'
 	  }
 	};
 	
 	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/home/zhangzewei/projects/starking/front-end/server/app/js/components/header/register.js",
+	  filename: '/home/zhangzewei/projects/starking/front-end/server/app/js/components/header/register.js',
 	  components: _components,
 	  locals: [module],
 	  imports: [_react3.default]
@@ -25839,7 +25868,7 @@
 	  };
 	}
 	
-	var register = _wrapComponent("register")(function (_Component) {
+	var register = _wrapComponent('register')(function (_Component) {
 	  _inherits(register, _Component);
 	
 	  function register() {
@@ -25849,89 +25878,98 @@
 	  }
 	
 	  _createClass(register, [{
-	    key: "render",
+	    key: 'checkRegister',
+	    value: function checkRegister(event) {
+	      var username = $('input[name="registerAccount"]').val();
+	      var password = $('input[name="registerPassword"]').val();
+	      if (username != '' && password != '') {
+	        event.preventDefault();
+	        var data = {
+	          username: username,
+	          password: password
+	        };
+	        $.ajax({
+	          url: 'test.json',
+	          data: data,
+	          dataType: 'json',
+	          type: 'POST'
+	        }).then(function (result) {
+	          console.log(result);
+	        }).catch(function () {
+	          console.log('服务器出错了');
+	        });
+	      } else {
+	        return false;
+	      }
+	    }
+	  }, {
+	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+	
 	      return _react3.default.createElement(
-	        "div",
-	        { className: "modal my-modal register" },
+	        'div',
+	        { className: 'modal my-modal register' },
 	        _react3.default.createElement(
-	          "div",
-	          { className: "modal-content" },
+	          'div',
+	          { className: 'modal-content' },
 	          _react3.default.createElement(
-	            "h4",
+	            'h4',
 	            null,
-	            "注册"
+	            '注册'
 	          ),
 	          _react3.default.createElement(
-	            "div",
-	            { className: "row" },
+	            'div',
+	            { className: 'row' },
 	            _react3.default.createElement(
-	              "form",
-	              { className: "col s12" },
+	              'form',
+	              { className: 'col s12' },
 	              _react3.default.createElement(
-	                "div",
-	                { className: "row" },
+	                'div',
+	                { className: 'row' },
 	                _react3.default.createElement(
-	                  "div",
-	                  { className: "row" },
+	                  'div',
+	                  { className: 'row' },
 	                  _react3.default.createElement(
-	                    "div",
-	                    { className: "input-field col s12" },
-	                    _react3.default.createElement("input", { type: "text", className: "validate" }),
+	                    'div',
+	                    { className: 'input-field col s12' },
+	                    _react3.default.createElement('input', { type: 'text', name: 'registerAccount', className: 'validate' }),
 	                    _react3.default.createElement(
-	                      "label",
+	                      'label',
 	                      null,
-	                      "账号"
+	                      '账号'
 	                    )
 	                  )
 	                ),
 	                _react3.default.createElement(
-	                  "div",
-	                  { className: "row" },
+	                  'div',
+	                  { className: 'row' },
 	                  _react3.default.createElement(
-	                    "div",
-	                    { className: "input-field col s12" },
-	                    _react3.default.createElement("input", { type: "password", className: "validate" }),
+	                    'div',
+	                    { className: 'input-field col s12' },
+	                    _react3.default.createElement('input', { type: 'password', name: 'registerPassword', className: 'validate' }),
 	                    _react3.default.createElement(
-	                      "label",
+	                      'label',
 	                      null,
-	                      "密码"
-	                    )
-	                  )
-	                ),
-	                _react3.default.createElement(
-	                  "div",
-	                  { className: "row" },
-	                  _react3.default.createElement(
-	                    "div",
-	                    { className: "input-field col s12" },
-	                    _react3.default.createElement("input", { type: "checkbox", id: "checkbox1" }),
-	                    _react3.default.createElement(
-	                      "label",
-	                      { className: "checkbox1", htmlFor: "checkbox1" },
-	                      "确认阅读",
-	                      _react3.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        "xxx"
-	                      ),
-	                      "条款"
+	                      '密码'
 	                    )
 	                  )
 	                )
 	              ),
 	              _react3.default.createElement(
-	                "div",
-	                { className: "modal-footer" },
+	                'div',
+	                { className: 'modal-footer' },
 	                _react3.default.createElement(
-	                  "button",
-	                  { type: "submit", className: "right waves-effect waves-light btn" },
-	                  "注册"
+	                  'button',
+	                  { onClick: function onClick(event) {
+	                      return _this2.checkRegister(event);
+	                    }, className: 'right waves-effect waves-light btn' },
+	                  '注册'
 	                ),
 	                _react3.default.createElement(
-	                  "a",
-	                  { href: "#!", className: " modal-action modal-close waves-effect waves-green btn-flat" },
-	                  "取消"
+	                  'a',
+	                  { href: '#!', className: ' modal-action modal-close waves-effect waves-green btn-flat' },
+	                  '取消'
 	                )
 	              )
 	            )

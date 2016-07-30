@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>girls-details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/girl-details.css">
+    <link rel="stylesheet" href="app/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="app/css/common.css">
+    <link rel="stylesheet" type="text/css" href="app/css/girl-details.css">
   </head>
   <body>
     <header id="header"></header>
@@ -15,15 +15,16 @@
 
     <div id="footer"></div>
   </body>
-  <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/build/common.js"></script>
-  <script type="text/javascript" src="js/build/girldetail.js"></script>
+  <script type="text/javascript" src="app/js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="app/js/materialize.min.js"></script>
+  <script type="text/javascript" src="http://localhost:3000/app/js/build/main.js"></script>
+  <script type="text/javascript" src="http://localhost:3000/app/js/build/common.js"></script>
+  <script type="text/javascript" src="http://localhost:3000/app/js/build/girldetail.js"></script>
   <script type="text/javascript">
   $(document).ready(function(){
     $('.materialboxed').materialbox();
-    $('.op-logoin').click(function(){
-      $('.logoin').openModal();
+    $('.op-login').click(function(){
+      $('.login').openModal();
     });
     $('.op-register').click(function(){
       $('.register').openModal();

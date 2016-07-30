@@ -1,3 +1,5 @@
 /front-end/server/node_modules
 /manage/node_modules
 /manage/metronic.bootstrap
+.idea
+/front-end/.idea
