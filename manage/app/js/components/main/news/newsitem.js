@@ -1,31 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const girlitems = React.createClass({
+const newsitems = React.createClass({
   getInitialState() {
     return {
       data: this.props.data
     }
   },
   render() {
-    const girlslists = this.state.data.map((data, index) => {
+    const newslists = this.state.data.map((data, index) => {
       return (
         <tr className="odd gradeX" key={index}>
           <td className="hidden"><input type="checkbox" className="checkboxes" value="1" /></td>
           <td>{index + 1}</td>
-          <td><Link to={`/girldetail/${data.name}`}>{data.name}</Link></td>
-          <td>{data.vote}</td>
-          <td>{data.joined}</td>
-          <td><button className="btn red">delete</button></td>
+          <td>{data.name}</td>
+          <td>{data.time}</td>
+          <td>{data.author}</td>
+          <td>
+            <Link className="btn green" to={`/editnews/${data.name}`}>Edit</Link>
+            &nbsp;
+            <button className="btn red">delete</button>
+          </td>
         </tr>
       )
     });
     return (
       <tbody>
-        {girlslists}
+        {newslists}
       </tbody>
     );
   }
 })
 
-export default girlitems;
+export default newsitems;

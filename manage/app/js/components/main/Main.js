@@ -10,7 +10,7 @@ class main extends Component {
           <li className="active ">
   					<a href="javascript:;">
   					<i className="icon-cogs"></i>
-  					<span className="title">Layouts</span>
+  					<span className="title">Magage Menu</span>
   					<span className="selected"></span>
   					<span className="arrow open"></span>
   					</a>
@@ -19,7 +19,13 @@ class main extends Component {
   							<Link to="/dashboard">dashboard</Link>
   						</li>
   						<li >
-  							<Link to="/girlslist">girlslist</Link>
+  							<Link to="/girlslist">Girls List</Link>
+  						</li>
+              <li >
+  							<Link to="/news">News List</Link>
+  						</li>
+              <li >
+  							<Link to="/managepic">Manage Pictrues</Link>
   						</li>
   					</ul>
   				</li>

@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-class header extends Component {
+const header = React.createClass({
   render() {
     return (
   <div className="header navbar navbar-inverse navbar-fixed-top">
@@ -35,6 +35,6 @@ class header extends Component {
 	</div>
     );
   }
-}
+})
 
 export default header;

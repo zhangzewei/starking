@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
 
-class dashboard extends Component {
+const dashboard = React.createClass({
   render() {
     return (
       <div className="page-content">
@@ -21,6 +21,6 @@ class dashboard extends Component {
       </div>
     );
   }
-}
+});
 
 export default dashboard;

@@ -9,6 +9,10 @@ import GirlsList from 'js/components/main/girlslist/girlslist';
 import Girldetail from 'js/components/main/girlInfo/girlInfo';
 import ChangeInfo from 'js/components/main/girlInfo/changeGirlInfo';
 import AddUrl from 'js/components/main/girlInfo/addUrl/addUrl';
+import NewsList from 'js/components/main/news/newslist';
+import EditNews from 'js/components/main/news/editnews';
+import ManagePics from 'js/components/main/managepics/managepics';
+import ChangePic from 'js/components/main/managepics/changepic';
 
 const header = document.getElementById('header');
 const footer = document.getElementById('footer');
@@ -25,9 +29,13 @@ function renderMain() {
           <IndexRoute component={DashBoard}/>
           <Route path="/dashboard" component={DashBoard} />
           <Route path="/girlslist" component={GirlsList} />
+          <Route path="/news" component={NewsList} />
+          <Route path="/managepic" component={ManagePics} />
           <Route path="/changeinfo(/:name)" component={ChangeInfo} />
           <Route path="/addurl(/:name)(/:type)" component={AddUrl} />
           <Route path="/girldetail(/:name)" component={Girldetail} />
+          <Route path="/editnews(/:name)" component={EditNews} />
+          <Route path="/changepic(/:pic)" component={ChangePic} />
        </Route>
     </Router>
     ,main)

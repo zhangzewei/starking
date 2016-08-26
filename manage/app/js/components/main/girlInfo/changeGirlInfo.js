@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const changeGirlInfo = React.createClass({
   getInitialState() {
     return {
-      name: this.props.params.name,
+      name: this.props.params.name === 'newgirl' ? '' : this.props.params.name,
       imgs: [
         {
           name: '123',
@@ -135,7 +135,7 @@ const changeGirlInfo = React.createClass({
                 <div className="control-group">
                   <div className="controls">
                     <button type="submit" className="btn green" >change</button>
-                    <Link to={`/girldetail/${this.state.name}`} className="btn" >cancel</Link>
+                    <Link to={this.state.name === '' ? `/girlslist` : `/girldetail/${this.state.name}`} className="btn" >cancel</Link>
   								</div>
 								</div>
               </form>

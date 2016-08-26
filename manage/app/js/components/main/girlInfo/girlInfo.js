@@ -7,7 +7,7 @@ const ShowPics = React.createClass({
       return (
         <div className="span3" key={index}>
           <div className="item">
-            <a className="fancybox-button" data-rel="fancybox-button" title="Photo" href={img.url} >
+            <a className="fancybox-button" data-rel="fancybox-button" title={img.url} href={img.url} >
               <div className="zoom">
                 <img src={img.url} alt="Photo" />
                 <div className="zoom-icon"></div>
@@ -29,7 +29,7 @@ const ShowVids = React.createClass({
   render() {
     const vids = this.props.data.map((vid, index) => {
       return (
-        <li  key={index}><span>{vid.name}:</span><a href={vid.url} target="blank">{vid.url}</a></li>
+        <li key={index}><span>{vid.name}:</span><a href={vid.url} target="blank">{vid.url}</a></li>
       )
     });
     return (
@@ -102,7 +102,7 @@ const girlInfo = React.createClass({
             <div className="span12">
               <h3 className="page-title">
                 {this.props.params.name}'s Information
-                <small><Link to="/girlslist">back</Link></small>
+                &nbsp;&nbsp;<Link to="/girlslist">Go Back</Link>
               </h3>
             </div>
           </div>

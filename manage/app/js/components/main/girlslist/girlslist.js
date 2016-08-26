@@ -1,8 +1,9 @@
-import React, { Component, PropTypes } from 'react';
-import GirlItem from './girlitem'
+import React from 'react';
+import { Link } from 'react-router';
+import GirlItem from './girlitem';
 
 const girlslist = React.createClass({
-  getInitialState: function() {
+  getInitialState() {
       return { data: [
         {
           name: 'qwe',
@@ -72,10 +73,10 @@ const girlslist = React.createClass({
       ]
     };
   },
-  componentDidMount: function() {
+  componentDidMount() {
     TableManaged.init();
   },
-  render: function() {
+  render() {
     return (
       <div className="page-content">
         <div className="container-fluid">
@@ -95,9 +96,9 @@ const girlslist = React.createClass({
                 <div className="portlet-body">
                   <div className="clearfix">
                     <div className="btn-group">
-                      <button id="sample_editable_1_new" className="btn green">
+                      <Link id="sample_editable_1_new" className="btn green" to='/changeinfo/newgirl'>
                       Add New <i className="icon-plus"></i>
-                      </button>
+                      </Link>
                     </div>
                   </div>
                   <table className="table table-striped table-bordered table-hover sample_1" >
