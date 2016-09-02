@@ -14,7 +14,7 @@ const ChangeUrl = React.createClass({
           <div className="row-fluid">
             <div className="span12">
               <h3 className="page-title">
-              Change {this.state.pic}
+              { this.state.pic === 'add' ? 'Add a New Pictrue' : 'Change ' + this.state.pic }
               </h3>
             </div>
           </div>
@@ -29,7 +29,7 @@ const ChangeUrl = React.createClass({
 								</div>
                 <div className="control-group">
                   <div className="controls">
-                    <button type="submit" className="btn green" >Change</button>
+                    <button type="submit" className="btn green" >Change</button>&nbsp;
                     <Link to='/managepic' className="btn" >Cancel</Link>
   								</div>
 								</div>
